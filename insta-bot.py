@@ -33,7 +33,7 @@ def initialize_browser():
     # Do this so we don't get DevTools and Default Adapter failure
     options = webdriver.ChromeOptions()
     # options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    # options.add_argument("--log-level=3")
+    options.add_argument("--log-level=3")
 
     # Initialize chrome driver and set chrome as our browser
     browser = webdriver.Chrome(executable_path=CM().install(), options=options)
